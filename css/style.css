@@ -1,0 +1,229 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#universe {
+	height: 100%;
+	width: 100%;
+	background: black;
+	background: radial-gradient(rgba(70, 70, 70, 1), rgba(0, 0, 0, 1));
+	
+	
+	
+}
+
+#stars {
+	position: relative;
+	z-index: 2;
+	background-image: url(../img/stars.png);
+	height: 100%;
+	width: 100%;
+	animation: starGlare 6s infinite alternate;
+}
+
+#sun {
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	height: 250px;
+	width: 250px;
+	background: orange;
+	background: radial-gradient(#f5c313, #ec7e08);
+	border-radius: 100%;
+	box-shadow: 0 0 60px 10px #ec7e08;
+	animation: sunFlare 2s linear infinite alternate;
+}
+
+#earth-orbit {
+	height: 560px;
+	width: 560px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -290px;
+	margin-left: -330px;
+	border-radius: 100%;
+	animation: orbit 20s linear infinite;
+}
+
+#earth {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	left: -5%;
+	z-index: 4;
+	background: blue;
+	background: radial-gradient(#4dd18a, #4dced1, #117ff4);
+	border-radius: 100%;
+}
+
+#moon-orbit {
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	top: 50%;
+	margin-top: -65px;
+	left: -50px;
+	border-radius: 100%;
+	animation: orbit 5s linear infinite;
+}
+
+#moon {
+	height: 30px;
+	width: 30px;
+	background: gray;
+	background: radial-gradient(#c4c6c5, #757575);
+	position: absolute;
+	top: -10px;
+	z-index: 4;
+	border-radius: 100%;
+}
+
+#orbit-rocket{
+	height:250px;
+	width: 250px;
+
+	position: absolute;
+	z-index: 4;
+	top: 50px;
+	left: 10px;
+	border-radius: 100%;
+	animation: orbit 60s linear infinite;
+	
+}
+
+#planet-1 {
+	height: 120px;
+	width: 120px;
+	background: red;
+	background: radial-gradient(#cc1e1e, #470303);
+	border-radius: 100%;
+	position: absolute;
+	z-index: 4;
+	top: 100px;
+	left: 100px;
+	box-shadow: 0 0 50px 3px #470303;
+}
+
+#rocket {
+	height: 50px;
+	position: relative;
+	top: 40%;
+	left: -11px;
+	
+	
+	
+}
+
+#planet-2 {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	z-index: 4;
+	top: 75%;
+	left: 79%;
+	background: radial-gradient(#3f9b0a, #205601);
+	border-radius: 100%;
+	box-shadow: 0 0 10px 2px #205601;
+	animation: planetFlare 2s linear infinite alternate;
+	
+}
+
+#orbit-2 {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 74%;
+	left: 79%;
+	border-radius: 100%;
+	animation: orbit 8s linear infinite;
+	
+	
+}
+
+#planet-3 {
+	height: 40px;
+	width: 40px;
+	position: relative;
+	z-index: 4;
+	background: radial-gradient(#59088e, #2b0047);
+	border-radius: 100%;
+	
+}
+
+#orbit-3 {
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	border-radius: 100%;
+	animation: orbit 3s linear infinite reverse;
+
+
+}
+
+#planet-4 {
+	height: 40px;
+	width: 40px;
+	position: relative;
+	z-index: 10;
+	background: radial-gradient(#aaaa63, #494902);
+	border-radius: 100%;
+
+}
+	
+
+
+@keyframes sunFlare {
+	from {
+		box-shadow: 0 0 50px 10px #ec7e08;
+	}
+	
+	to {
+		box-shadow: 0 0 100px 13px #ec7e08;
+	}
+}
+
+@keyframes planetFlare {
+	from {
+		box-shadow: 0 0 50px 10px #205601;
+	}
+
+	to {
+		box-shadow: 0 0 80px 11px #205601;
+	}
+}
+	
+@keyframes starGlare {
+	from {
+		opacity: 1;
+	}
+	
+	to {
+		opacity: 0.3;
+	}
+}	
+
+@keyframes orbit {
+	from {
+		transform: rotate(0)
+	}
+	
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+
+	
+	
+	
+	
+	
